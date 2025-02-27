@@ -3,6 +3,11 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
+name = "example_package"
+dynamic = ["version"]  # Add this line
+
+[tool.hatch.version]
+path = "src/example_package/__init__.py" 
 
 authors = [
   { name="Example Author", email="author@example.com" },
